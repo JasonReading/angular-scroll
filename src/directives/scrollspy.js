@@ -29,7 +29,8 @@ angular.module('duScroll.scrollspy', ['duScroll.spyAPI'])
 
   Spy.prototype.flushTargetCache = function() {
     if(this.targetId) {
-      this.target = undefined;
+      delete this.target;
+      // this.target = undefined;
     }
   };
 
