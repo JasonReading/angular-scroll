@@ -23,7 +23,7 @@ angular.module('duScroll.spyAPI', ['duScroll.scrollContainerAPI'])
       var i, currentlyActive, toBeActive, spies, spy, pos;
       spies = context.spies;
       currentlyActive = context.currentlyActive;
-      toBeActive = undefined;
+      toBeActive;
 
       for(i = 0; i < spies.length; i++) {
         spy = spies[i];
